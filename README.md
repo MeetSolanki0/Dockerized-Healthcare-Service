@@ -1,9 +1,38 @@
-# Dockerized Healthcare Planning Assistant
+# Dockerized Healthcare Service
 
-Healthcare Planning Assistant is a FastAPI-based web application that lets users enter their symptoms and receive **structured, LLM-generated healthcare planning advice**.  
-It uses **LangChain** to orchestrate between **Google Gemini** and **Groq Llama** models.
+**Group No: D6 - Group 11**
+
+**Project No:** DO-22
+---
+
+## Project Description
+
+This project focuses on building and deploying a **Healthcare Web Service using Python**. The application is containerized using **Docker** to ensure consistent and portable deployment across different environments.By using Docker, the healthcare service can run reliably without dependency conflicts, making the system easier to deploy, scale, and manage. The project demonstrates how modern DevOps practices can be used to deploy web services efficiently.
+Healthcare Planning Assistant is a FastAPI-based web application that lets users enter their symptoms and receive **structured, LLM-generated healthcare planning advice**.It uses **LangChain** to orchestrate between **Google Gemini** and **Groq Llama** models.
+
+---
+
+## Project Overview
+
+The system provides a simple healthcare service API , which can handle basic healthcare-related operations such as patient information management or service responses The application is packaged inside a **Docker container**, allowing developers to run the service in any environment without manually installing dependencies.
+
+---
 
 > **Disclaimer:** This tool provides general informational guidance only and is **not** a substitute for professional medical advice, diagnosis, or treatment.
+
+## Objectives
+
+• **Automation:** To deploy the healthcare application using Docker containers instead of manual environment setup.
+
+• **Consistency:** To ensure the application runs the same way across development and deployment environments.
+
+• **Portability:** To allow the healthcare service to run on any system that supports Docker without dependency issues.
+
+• **Scalability:** To make it easier to scale the healthcare service by running multiple container instances when needed.
+
+• **Reliability:** To improve application reliability by packaging all dependencies within a Docker container.
+
+---
 
 ## Features
 
@@ -18,6 +47,17 @@ It uses **LangChain** to orchestrate between **Google Gemini** and **Groq Llama*
   2. Precautions
   3. Medication Guidance
   4. Nutrition Advice
+ 
+  ---
+
+## Tech Stack
+
+| Category | Tools/Technologies Used |
+|----------|--------------------------|
+| IaC & Orchestration | Terraform, Docker |
+| CI/CD & Automation | GitHub Actions, Git |
+
+---
 
 ## Project Structure (high level)
 
@@ -153,65 +193,7 @@ This:
 - This project is designed to be **Docker-friendly**; configuration is fully driven by environment variables.
 - You can later add more routes, models, or persistence (e.g., PostgreSQL) without changing the existing LLM orchestration.
 =======
-# Dockerized Healthcare Service
 
-**Group No: D6 - Group 11**
-
-**Project No:** DO-22
----
-
-## Project Description
-
-This project focuses on building and deploying a **Healthcare Web Service using Python**. The application is containerized using **Docker** to ensure consistent and portable deployment across different environments.By using Docker, the healthcare service can run reliably without dependency conflicts, making the system easier to deploy, scale, and manage. The project demonstrates how modern DevOps practices can be used to deploy web services efficiently.
-
----
-
-## Project Overview
-
-The system provides a simple healthcare service API , which can handle basic healthcare-related operations such as patient information management or service responses The application is packaged inside a **Docker container**, allowing developers to run the service in any environment without manually installing dependencies.
-
----
-
-## Objectives
-
-• **Automation:** To deploy the healthcare Flask application using Docker containers instead of manual environment setup.
-
-• **Consistency:** To ensure the application runs the same way across development and deployment environments.
-
-• **Portability:** To allow the healthcare service to run on any system that supports Docker without dependency issues.
-
-• **Scalability:** To make it easier to scale the healthcare service by running multiple container instances when needed.
-
-• **Reliability:** To improve application reliability by packaging all dependencies within a Docker container.
-
----
-
-## Tech Stack
-
-| Category | Tools/Technologies Used |
-|----------|--------------------------|
-| IaC & Orchestration | Terraform, Kubernetes (K8s), Docker |
-| CI/CD & Automation | GitHub Actions, Git |
-| Backend (Control Plane) | Node.js, Express.js |
-| Database & Auth | MongoDB (Mongoose), JWT, Bcrypt |
-| Frontend/Templating | EJS (Embedded JavaScript) |
-| Environment Mgmt | Dotenv, Cookie-parser, Multer |
-
----
-
-## Key Features
-
-• **Containerized Deployment:** The healthcare Flask application is packaged into Docker containers for consistent and portable execution.
-
-• **RESTful API Service:** Provides API endpoints for healthcare-related operations using the Flask framework.
-
-• **Environment Consistency:** Docker ensures the application runs the same across development and deployment environments.
-
-• **Simplified Setup:** All application dependencies are bundled within the container, eliminating manual installation.
-
-• **Scalable Architecture:** The containerized setup allows the service to be easily scaled when required.
-
----
 
 ## Group Members
 
